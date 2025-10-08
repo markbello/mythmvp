@@ -1,12 +1,12 @@
+import logo from "@/assets/myth-mvp-logo.png";
+
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <div className="text-2xl font-bold gradient-text mb-2">
-              MYTH MVP
-            </div>
+            <img src={logo} alt="MYTH MVP" className="h-8 mb-2" />
             <p className="text-sm text-muted-foreground">
               Building your company's momentum
             </p>

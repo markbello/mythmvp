@@ -39,7 +39,7 @@ const Hero = () => {
           Our services ensure <strong className="text-foreground">seamless progress at any stage</strong>.
         </p>
         
-        <Button size="lg" className="glow-effect text-lg px-8 py-6">
+        <Button size="lg" className="text-lg px-8 py-6">
           Get Started
         </Button>
       </div>

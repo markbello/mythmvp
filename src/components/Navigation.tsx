@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/myth-mvp-logo.png";
 
 const Navigation = () => {
   return (
@@ -6,9 +7,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold gradient-text">
-              MYTH MVP
-            </div>
+            <img src={logo} alt="MYTH MVP" className="h-8" />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
