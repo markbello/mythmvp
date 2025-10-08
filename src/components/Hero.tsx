@@ -13,7 +13,7 @@ const Hero = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="absolute inset-0 bg-background/60 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-white/90 backdrop-blur-sm" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10 text-center">
