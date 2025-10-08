@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 
 const Introduction = () => {
   return (
-    <section id="about" className="py-24 bg-card">
+    <section id="about" className="py-24 bg-card scroll-mt-20">
       <div className="container mx-auto px-6">
         <div className="mb-12">
           <div className="inline-block">

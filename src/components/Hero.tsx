@@ -3,7 +3,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20">
       <div 
         className="absolute inset-0 z-0"
         style={{
@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-6 relative z-10 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
           We Don't Just Build MVPs.{" "}
           <br />
           We Build Your Company's{" "}
