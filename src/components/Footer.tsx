@@ -14,6 +14,7 @@ const Footer = () => {
           
           <div className="flex space-x-6 text-sm text-muted-foreground">
             <a href="/" className="hover:text-primary transition-colors">Home</a>
+            <a href="#about" className="hover:text-primary transition-colors">About</a>
             <a href="/leadership" className="hover:text-primary transition-colors">Leadership</a>
             <a href="#services" className="hover:text-primary transition-colors">Services</a>
             <a href="/case-studies" className="hover:text-primary transition-colors">Case Studies</a>
