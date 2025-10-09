@@ -25,7 +25,7 @@ const Leadership = () => {
       title: "Strategic Operations & Innovation Scaling Specialist",
       bio: "Roswell brings over a decade of leadership and operational expertise to the team, she has lead high-growth initiatives in technology-driven companies. Known for orchestrating and executing complex, high-impact projects at organizations like Flatiron Health and Hailo, she has a unique ability to translate strategic visions into actionable, tech-enabled outcomes. At Collectors, she has helped to triple the valuation, quadruple headcount, and drive global scale while completing a full Operational and tech/UX overhaul. Roswell's hands-on approach and commitment to driving rapid innovation make her an essential partner in transforming ideas into market realities.",
       image: roswellImage,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/roswell-hobbs-59409659/"
     }
   ];
 
