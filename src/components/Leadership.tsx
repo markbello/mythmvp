@@ -1,20 +1,30 @@
 import { Card } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
+import danImage from "@/assets/dan-van-tran.png";
+import smitImage from "@/assets/smit-gujarathi.png";
+import roswellImage from "@/assets/roswell-hobbs.png";
 
 const Leadership = () => {
   const leaders = [
     {
-      name: "Co-Founder Name 1",
-      title: "Co-Founder & CEO",
-      bio: "Brief bio highlighting expertise, background, and credibility. Previous roles and achievements that establish trust.",
-      image: "/placeholder.svg",
+      name: "Dan Van Tran",
+      title: "Rapid Innovation Catalyst & Disruption Strategist",
+      bio: "Dan (DVT) is a dynamic technology leader with nearly two decades of experience transforming complex challenges into rapid, scalable solutions. He excels at building agile MVPs and crafting disruptive product strategies that drive startup success and yield high-value exits. DVT also specializes in guiding startups through early-stage development, offering interim technical leadership and facilitating the recruitment of permanent technology executives and teams. With a rich background spanning multinational enterprises to three-person startups—including FactSet, Flatiron Health, his own cofounded venture Zenauction, and Collectors—DVT has a proven knack for turning bold ideas into market-ready innovations.",
+      image: danImage,
+      linkedin: "https://www.linkedin.com/in/dantran/"
+    },
+    {
+      name: "Smit Gujarathi",
+      title: "Startup Architect & Tactical Engineering Builder",
+      bio: "With over 15 years at the forefront of technological innovation, Smit excels in turning groundbreaking ideas into scalable, market-ready products. His extensive background—from multinational enterprises to nimble startups—includes leading roles at Blackrock and Flatiron Health, as well as co-founding a startup that achieved a multi-million-dollar exit. Smit's expertise and entrepreneurial drive have been central to our clients' success.",
+      image: smitImage,
       linkedin: "#"
     },
     {
-      name: "Co-Founder Name 2",
-      title: "Co-Founder & CTO",
-      bio: "Brief bio highlighting technical expertise, background, and credibility. Previous roles and achievements that establish trust.",
-      image: "/placeholder.svg",
+      name: "Roswell Hobbs",
+      title: "Strategic Operations & Innovation Scaling Specialist",
+      bio: "Roswell brings over a decade of leadership and operational expertise to the team, she has lead high-growth initiatives in technology-driven companies. Known for orchestrating and executing complex, high-impact projects at organizations like Flatiron Health and Hailo, she has a unique ability to translate strategic visions into actionable, tech-enabled outcomes. At Collectors, she has helped to triple the valuation, quadruple headcount, and drive global scale while completing a full Operational and tech/UX overhaul. Roswell's hands-on approach and commitment to driving rapid innovation make her an essential partner in transforming ideas into market realities.",
+      image: roswellImage,
       linkedin: "#"
     }
   ];
@@ -31,7 +41,7 @@ const Leadership = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {leaders.map((leader, index) => (
             <Card 
               key={index} 
