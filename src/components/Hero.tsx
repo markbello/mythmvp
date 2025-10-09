@@ -30,7 +30,9 @@ const Hero = () => {
           Our services flex to any stage and any team.
         </p>
         
-        <Button size="lg" className="text-lg px-8 py-6">
+        <Button size="lg" className="text-lg px-8 py-6" onClick={() => {
+          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+        }}>
           Get Started
         </Button>
       </div>

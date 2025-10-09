@@ -11,23 +11,23 @@ const Navigation = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-foreground hover:text-primary transition-colors">
+            <a href="/#home" className="text-foreground hover:text-primary transition-colors">
               Home
             </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+            <a href="/#about" className="text-foreground hover:text-primary transition-colors">
               About
             </a>
             <a href="/leadership" className="text-foreground hover:text-primary transition-colors">
               Leadership
             </a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">
+            <a href="/#services" className="text-foreground hover:text-primary transition-colors">
               Services
             </a>
             <a href="/case-studies" className="text-foreground hover:text-primary transition-colors">
               Case Studies
             </a>
-            <a href="#contact">
-              <Button variant="outline">
+            <a href="/#contact">
+              <Button>
                 Contact Us
               </Button>
             </a>

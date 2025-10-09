@@ -35,6 +35,14 @@ const Services = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive solutions to bring your ideas to life and scale your business
           </p>
+          <div className="mt-6">
+            <a 
+              href="/case-studies" 
+              className="text-primary hover:text-primary/80 font-medium transition-colors"
+            >
+              View Case Studies & Testimonials →
+            </a>
+          </div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

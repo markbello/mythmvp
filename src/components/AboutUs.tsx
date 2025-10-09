@@ -29,6 +29,15 @@ const AboutUs = () => {
             We transform your ideas into market-ready solutions, managing technical complexities as your interim technology partner so you can focus on your core business.
           </p>
           
+          <div className="text-center mb-12">
+            <a 
+              href="/leadership" 
+              className="text-primary hover:text-primary/80 font-medium transition-colors"
+            >
+              Meet Our Leadership Team →
+            </a>
+          </div>
+          
           <div className="space-y-6">
             {features.map((feature, index) => (
               <Card 
