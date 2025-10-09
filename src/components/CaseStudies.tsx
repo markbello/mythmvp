@@ -43,7 +43,7 @@ const CaseStudies = () => {
   ];
 
   return (
-    <section id="case-studies" className="py-24 bg-secondary/30 scroll-mt-20">
+    <section id="case-studies" className="pt-20 pb-24 bg-secondary/30 scroll-mt-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
