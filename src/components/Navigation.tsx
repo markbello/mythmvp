@@ -50,22 +50,8 @@ const Navigation = () => {
             >
               Home
             </a>
-            <a 
-              href="/#about" 
-              onClick={(e) => handleNavClick(e, 'about')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              About
-            </a>
             <a href="/leadership" className="text-foreground hover:text-primary transition-colors">
               Leadership
-            </a>
-            <a 
-              href="/#services" 
-              onClick={(e) => handleNavClick(e, 'services')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Services
             </a>
             <a href="/case-studies" className="text-foreground hover:text-primary transition-colors">
               Case Studies
@@ -97,25 +83,11 @@ const Navigation = () => {
                   Home
                 </a>
                 <a 
-                  href="/#about" 
-                  onClick={(e) => handleNavClick(e, 'about')}
-                  className="text-lg text-foreground hover:text-primary transition-colors"
-                >
-                  About
-                </a>
-                <a 
                   href="/leadership" 
                   onClick={() => handlePageNav('/leadership')}
                   className="text-lg text-foreground hover:text-primary transition-colors"
                 >
                   Leadership
-                </a>
-                <a 
-                  href="/#services" 
-                  onClick={(e) => handleNavClick(e, 'services')}
-                  className="text-lg text-foreground hover:text-primary transition-colors"
-                >
-                  Services
                 </a>
                 <a 
                   href="/case-studies" 
