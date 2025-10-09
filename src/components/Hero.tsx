@@ -6,25 +6,28 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 relative z-10 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          We Don't Just Build MVPs.{" "}
+          We Don't Just Build Products.{" "}
           <br />
-          We Build Your Company's{" "}
+          We Build{" "}
           <span className="gradient-text">Momentum</span>.
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed">
-          At Myth MVP, we turn your <strong className="text-foreground">bold ideas</strong> into{" "}
-          <strong className="text-foreground">agile, scalable solutions</strong>—fast. Whether you're 
-          launching a new innovation or evolving outdated technology, our team delivers proof-of-concepts, 
-          MVPs, and fully operational products that drive{" "}
-          <strong className="text-foreground">growth</strong> and{" "}
-          <strong className="text-foreground">high-value exits</strong>.
+          At Myth MVP, we turn <strong className="text-foreground">bold ideas</strong> into{" "}
+          <strong className="text-foreground">simple, scalable tech solutions</strong> - fast. 
+        </p>
+        
+        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed">
+          Whether launching something new or modernizing outdated technology, we deliver{" "}
+          <strong className="text-foreground">Proof of Concepts</strong>,{" "}
+          <strong className="text-foreground">Minimum Viable Products</strong>, and{" "}
+          <strong className="text-foreground">Complete Builds</strong> that drive growth and high-value exits.
         </p>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-12">
-          We empower you to <strong className="text-foreground">start building your vision immediately</strong>, 
-          whether you're awaiting the hire of a full-time CTO or already have an existing Head of Tech. 
-          Our services ensure <strong className="text-foreground">seamless progress at any stage</strong>.
+          We empower you to <strong className="text-foreground">start building right away</strong>. 
+          We can own builds end-to-end, or work alongside your Head of Tech. 
+          Our services flex to any stage and any team.
         </p>
         
         <Button size="lg" className="text-lg px-8 py-6">
