@@ -7,43 +7,53 @@ const Introduction = () => {
         <div className="mb-12">
           <div className="inline-block">
             <span className="text-accent font-semibold">Introduction</span>
-            <span className="text-muted-foreground ml-2">/ Welcome To The Start Of Your Next Disruption</span>
+            <span className="text-muted-foreground ml-2">/ The way we work</span>
           </div>
           <div className="h-px bg-border mt-4" />
         </div>
         
         <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-          Building technical designs, roadmaps, products, and teams for{" "}
-          <span className="gradient-text">next-generation startups and leaders</span>
+          Rapid builds, tailored solutions, and{" "}
+          <span className="gradient-text">technology transformations</span> - trusted by founders and owners across industries.
         </h2>
         
         <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
-          We partner with leaders in e-commerce, D2C, B2B, healthcare, finance, and more to accelerate innovation.
+          We partner with leaders in e-commerce, D2C, B2B, education, healthcare, finance, and more to accelerate innovation.
         </p>
         
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
-            <h3 className="text-xl font-bold mb-4 gradient-text">Rapid Innovation</h3>
+            <h3 className="text-xl font-bold mb-4 gradient-text">Rapid Delivery</h3>
             <p className="text-muted-foreground">
-              Launch new ideas quickly with architecture and organizational design plans typically 
-              delivered in days or weeks, and projects typically delivered in 3–6 months.
+              We launch faster. Architecture and org design in days, products in 3–6 months. On average, Myth projects save clients 9 months to launch and $175K in tech debt.
             </p>
           </Card>
           
           <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
-            <h3 className="text-xl font-bold mb-4 gradient-text">Agile MVP Development</h3>
+            <h3 className="text-xl font-bold mb-4 gradient-text">Team Development</h3>
             <p className="text-muted-foreground">
-              From concept to MVP in record time—one of our projects helped a company go from idea 
-              to POC in 1–2 months and to a scalable MVP in 6 months, leading to an acquisition valued 
-              in the tens of millions in less than 2 years.
+              We help you scale teams the right way - advising on org structure, guiding technical recruiting, and facilitating contract-to-hire on builds so you can evaluate engineers before making a long-term commitment.
+            </p>
+          </Card>
+          
+          <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
+            <h3 className="text-xl font-bold mb-4 gradient-text">Agile Product Development</h3>
+            <p className="text-muted-foreground">
+              Proof of Concept in 2 months, scalable MVP in 6 months. A recent Myth MVP build following this framework enabled an acquisition worth $20M in 18 months.
             </p>
           </Card>
           
           <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
             <h3 className="text-xl font-bold mb-4 gradient-text">Tailored Solutions</h3>
             <p className="text-muted-foreground">
-              Whether you're seeking enterprise-grade infrastructure or low cash burn approaches, 
-              we build and implement technical plans that meet your strategic goals.
+              From enterprise-grade infrastructure to lean, cost-efficient builds, we design solutions aligned with your strategy and financial goals.
+            </p>
+          </Card>
+          
+          <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
+            <h3 className="text-xl font-bold mb-4 gradient-text">Engineering Without Pitfalls</h3>
+            <p className="text-muted-foreground">
+              Avoid costly technical mistakes or resolve existing tech debt. We've learned the hard way so that you don't have to.
             </p>
           </Card>
         </div>
