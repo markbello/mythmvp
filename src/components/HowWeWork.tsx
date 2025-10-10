@@ -1,0 +1,58 @@
+import { Card } from "@/components/ui/card";
+import { Search, Zap, TrendingUp } from "lucide-react";
+
+const HowWeWork = () => {
+  const steps = [
+    {
+      number: "01",
+      icon: Search,
+      title: "Discovery",
+      description: "We start by understanding your idea, challenges, and strategic goals, developing them into concrete technical strategy and design documents that include both organizational and technical details."
+    },
+    {
+      number: "02",
+      icon: Zap,
+      title: "Rapid Prototyping",
+      description: "Our experienced team builds agile proof-of-concepts and MVPs to validate your vision."
+    },
+    {
+      number: "03",
+      icon: TrendingUp,
+      title: "Iterate & Scale",
+      description: "Based on real-world feedback, we refine your product and build scalable solutions that propel your business forward."
+    }
+  ];
+
+  return (
+    <section id="how-we-work" className="py-24 scroll-mt-20">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            How We <span className="gradient-text">Work</span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Our proven process takes you from concept to market-ready product
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {steps.map((step, index) => (
+            <Card 
+              key={index} 
+              className="p-8 bg-card border-border hover:border-primary transition-all hover:scale-105 duration-300 relative"
+            >
+              <div className="text-6xl font-bold text-primary/10 absolute top-4 right-4">
+                {step.number}
+              </div>
+              <step.icon className="w-12 h-12 mb-4 text-primary relative z-10" />
+              <h3 className="text-2xl font-bold mb-4 relative z-10">{step.title}</h3>
+              <p className="text-muted-foreground relative z-10">{step.description}</p>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HowWeWork;
