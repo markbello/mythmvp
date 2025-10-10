@@ -85,7 +85,10 @@ const Leadership = () => {
               <h3 className="text-3xl font-bold mb-2">{founder.name}</h3>
               <p className="text-primary font-medium mb-4 text-lg">{founder.title}</p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                {founder.bio}
+                Dan (DVT) is a dynamic technology leader with nearly two decades of experience transforming complex challenges into rapid, scalable solutions. He excels at building agile MVPs and crafting disruptive product strategies that drive startup success and yield high-value exits. DVT also specializes in guiding startups through early-stage development, offering interim technical leadership and facilitating the recruitment of permanent technology executives and teams.
+              </p>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                With a rich background spanning multinational enterprises to three-person startups—including FactSet, Flatiron Health, his own cofounded venture Zenauction, and Collectors—DVT has a proven knack for turning bold ideas into market-ready innovations. His strategic leadership also extends to active roles in angel investing and community boards, underscoring his commitment to nurturing emerging talent and advancing technology.
               </p>
               <div className="mt-6">
                 <p className="font-semibold mb-3">Learn more about DVT&apos;s approach:</p>
@@ -116,7 +119,7 @@ const Leadership = () => {
               key={index} 
               className="p-8 bg-card border-border hover:shadow-lg transition-all"
             >
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-center">
                 <img 
                   src={member.image} 
                   alt={member.name}
@@ -124,9 +127,11 @@ const Leadership = () => {
                 />
                 <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
                 <p className="text-primary font-medium mb-4">{member.title}</p>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {member.bio}
-                </p>
+              </div>
+              <p className="text-muted-foreground mb-6 leading-relaxed text-left">
+                {member.bio}
+              </p>
+              <div className="flex justify-center">
                 <a 
                   href={member.linkedin}
                   className="text-primary hover:text-primary/80 transition-colors"
