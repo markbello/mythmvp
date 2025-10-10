@@ -1,22 +1,28 @@
 import { Card } from "@/components/ui/card";
-import { Search, Zap, TrendingUp } from "lucide-react";
+import { Search, Zap, TrendingUp, Users } from "lucide-react";
 
 const HowWeWork = () => {
   const steps = [
     {
       number: "01",
+      icon: Users,
+      title: "On-Demand CTO + Growth Partner Services & Technical Team Recruitment",
+      description: "Navigating the complexities of technology leadership and team building can be challenging for emerging startups. Myth MVP offers On-Demand CTO + Growth Partner services, providing strategic technical direction and overseeing development to ensure alignment with your business objectives. Additionally, we assist in evaluating and hiring a permanent CTO and initial tech team, ensuring a seamless transition and sustained growth."
+    },
+    {
+      number: "02",
       icon: Search,
       title: "Discovery",
       description: "We start by understanding your idea, challenges, and strategic goals, developing them into concrete technical strategy and design documents that include both organizational and technical details."
     },
     {
-      number: "02",
+      number: "03",
       icon: Zap,
       title: "Rapid Prototyping",
       description: "Our experienced team builds agile proof-of-concepts and MVPs to validate your vision."
     },
     {
-      number: "03",
+      number: "04",
       icon: TrendingUp,
       title: "Iterate & Scale",
       description: "Based on real-world feedback, we refine your product and build scalable solutions that propel your business forward."
@@ -35,7 +41,7 @@ const HowWeWork = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {steps.map((step, index) => (
             <Card 
               key={index} 
