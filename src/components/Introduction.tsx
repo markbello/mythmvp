@@ -1,9 +1,13 @@
 import { Card } from "@/components/ui/card";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Introduction = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="about" className="py-24 bg-card scroll-mt-20">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-24 bg-background relative scroll-mt-20 border-t-2 border-border">
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary/10 to-transparent" />
+      <div ref={ref} className={`container mx-auto px-6 relative z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="mb-12">
           <div className="inline-block">
             <span className="text-accent font-semibold">Introduction</span>
@@ -22,35 +26,35 @@ const Introduction = () => {
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
+          <Card className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <h3 className="text-xl font-bold mb-4 gradient-text">Rapid Delivery</h3>
             <p className="text-muted-foreground">
               We launch faster. Architecture and org design in days, products in 3–6 months. On average, Myth projects save clients 9 months to launch and $175K in tech debt.
             </p>
           </Card>
           
-          <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
+          <Card className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <h3 className="text-xl font-bold mb-4 gradient-text">Team Development</h3>
             <p className="text-muted-foreground">
               We help you scale teams the right way - advising on org structure, guiding technical recruiting, and facilitating contract-to-hire on builds so you can evaluate engineers before making a long-term commitment.
             </p>
           </Card>
           
-          <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
+          <Card className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <h3 className="text-xl font-bold mb-4 gradient-text">Agile Product Development</h3>
             <p className="text-muted-foreground">
               Proof of Concept in 2 months, scalable MVP in 6 months. A recent Myth MVP build following this framework enabled an acquisition worth $20M in 18 months.
             </p>
           </Card>
           
-          <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
+          <Card className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <h3 className="text-xl font-bold mb-4 gradient-text">Tailored Solutions</h3>
             <p className="text-muted-foreground">
               From enterprise-grade infrastructure to lean, cost-efficient builds, we design solutions aligned with your strategy and financial goals.
             </p>
           </Card>
           
-          <Card className="p-8 bg-secondary border-border hover:border-primary transition-colors">
+          <Card className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <h3 className="text-xl font-bold mb-4 gradient-text">Engineering Without Pitfalls</h3>
             <p className="text-muted-foreground">
               Avoid costly technical mistakes or resolve existing tech debt. We've learned the hard way so that you don't have to.

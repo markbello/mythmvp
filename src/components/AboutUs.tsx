@@ -1,7 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const AboutUs = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const features = [
     {
       title: "Proven Track Record",
@@ -18,8 +20,8 @@ const AboutUs = () => {
   ];
 
   return (
-    <section id="about" className="py-24 scroll-mt-20">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-24 scroll-mt-20 bg-secondary/20 border-y-2 border-border">
+      <div ref={ref} className={`container mx-auto px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
             About <span className="gradient-text">Us</span>
@@ -42,7 +44,7 @@ const AboutUs = () => {
             {features.map((feature, index) => (
               <Card 
                 key={index} 
-                className="p-6 bg-card border-border hover:border-primary transition-colors"
+                className="p-6 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 <div className="flex gap-4">
                   <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-1" />

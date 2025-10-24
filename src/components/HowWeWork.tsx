@@ -1,7 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Search, Zap, TrendingUp, Users } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const HowWeWork = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const steps = [
     {
       number: "01",
@@ -30,8 +32,8 @@ const HowWeWork = () => {
   ];
 
   return (
-    <section id="how-we-work" className="py-24 scroll-mt-20">
-      <div className="container mx-auto px-6">
+    <section id="how-we-work" className="py-24 scroll-mt-20 bg-secondary/30 border-y-2 border-border">
+      <div ref={ref} className={`container mx-auto px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             How We <span className="gradient-text">Work</span>
@@ -45,12 +47,12 @@ const HowWeWork = () => {
           {steps.map((step, index) => (
             <Card 
               key={index} 
-              className="p-8 bg-card border-border hover:border-primary transition-all hover:scale-105 duration-300 relative"
+              className="p-8 bg-card border-border hover:border-primary transition-all hover:scale-105 hover:-translate-y-2 hover:shadow-xl duration-300 relative group"
             >
-              <div className="text-6xl font-bold text-primary/10 absolute top-4 right-4">
+              <div className="text-6xl font-bold text-primary/10 absolute top-4 right-4 group-hover:text-primary/20 transition-colors duration-300">
                 {step.number}
               </div>
-              <step.icon className="w-12 h-12 mb-4 text-primary relative z-10" />
+              <step.icon className="w-12 h-12 mb-4 text-primary relative z-10 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-2xl font-bold mb-4 relative z-10">{step.title}</h3>
               <p className="text-muted-foreground relative z-10">{step.description}</p>
             </Card>
