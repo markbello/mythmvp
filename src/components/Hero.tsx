@@ -1,46 +1,36 @@
 import { Button } from "@/components/ui/button";
-import paperTexture from "@/assets/paper-texture.jpg";
 
 const Hero = () => {
   return (
-    <section 
-      id="home" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20 pt-20"
-      style={{
-        backgroundImage: `url(${paperTexture})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20 bg-gradient-to-br from-background via-secondary/20 to-primary/5 pt-20">
       
       <div className="container mx-auto px-6 relative z-10 text-center animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
           We Don't Just Build Products.{" "}
           <br />
           We Build{" "}
-          <span className="gradient-text">Momentum</span>.
+          <span className="gradient-text-animated">Momentum</span>.
         </h1>
         
-        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
+        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed">
           At Myth MVP, we turn <strong className="text-foreground">bold ideas</strong> into{" "}
           <strong className="text-foreground">simple, scalable tech solutions</strong> - fast. 
         </p>
         
-        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed">
           Whether launching something new or modernizing outdated technology, we deliver{" "}
           <strong className="text-foreground">Proof of Concepts</strong>,{" "}
           <strong className="text-foreground">Minimum Viable Products</strong>, and{" "}
           <strong className="text-foreground">Complete Builds</strong> that drive growth and high-value exits.
         </p>
         
-        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-12 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
+        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-12">
           We empower you to <strong className="text-foreground">start building right away</strong>. 
           We can own builds end-to-end, or work alongside your Head of Tech. 
           Our services flex to any stage and any team.
         </p>
         
-        <Button size="lg" className="text-lg px-8 py-6 hover-scale animate-in fade-in zoom-in duration-700 delay-700" onClick={() => {
+        <Button size="lg" className="text-lg px-8 py-6 hover-scale" onClick={() => {
           document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
         }}>
           Get Started
