@@ -288,42 +288,42 @@ All colors MUST be HSL.
   }
 
   .icon-rocket {
-    animation: rocket-launch 1s ease-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .icon-code {
-    animation: code-type 0.8s ease-in-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .icon-users {
-    animation: users-gather 0.8s ease-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .icon-zap {
-    animation: zap-flash 0.7s ease-in-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .icon-search {
-    animation: search-scan 1s ease-in-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .icon-trending {
-    animation: trending-rise 1s ease-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .icon-mail {
-    animation: mail-bounce 1s ease-in-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .icon-phone {
-    animation: phone-ring 0.8s ease-in-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .icon-linkedin {
-    animation: linkedin-pulse 0.8s ease-in-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 
   .icon-link {
-    animation: link-shoot 0.7s ease-out;
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 }
