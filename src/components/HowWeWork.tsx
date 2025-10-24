@@ -70,7 +70,7 @@ const HowWeWork = () => {
               <div className="text-6xl font-bold text-primary/10 absolute top-4 right-4 group-hover:text-primary/20 transition-colors duration-300">
                 {step.number}
               </div>
-              <step.icon className={`w-12 h-12 mb-4 text-primary relative z-10 ${step.isVisible ? step.iconClass : 'opacity-0'}`} />
+              <step.icon className={`w-12 h-12 mb-4 text-primary relative z-10 ${step.isVisible ? step.iconClass : 'opacity-0 scale-0'}`} />
               <h3 className="text-2xl font-bold mb-4 relative z-10">{step.title}</h3>
               <p className="text-muted-foreground relative z-10">{step.description}</p>
             </Card>
