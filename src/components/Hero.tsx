@@ -9,7 +9,7 @@ const Hero = () => {
           We Don't Just Build Products.{" "}
           <br />
           We Build{" "}
-          <span className="gradient-text-animated">Momentum</span>.
+          <span className="gradient-text">Momentum</span>.
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed">
