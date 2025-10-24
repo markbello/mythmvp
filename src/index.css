@@ -71,7 +71,7 @@ All colors MUST be HSL.
       hsl(210 100% 50%)
     );
     background-size: 200% auto;
-    animation: gradient-shift 8s linear infinite;
+    animation: gradient-shift 6.4s linear infinite;
   }
 
   @keyframes gradient-shift {
