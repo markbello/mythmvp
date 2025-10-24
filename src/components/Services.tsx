@@ -7,21 +7,25 @@ const Services = () => {
   const services = [
     {
       icon: Rocket,
+      iconClass: "icon-rocket",
       title: "MVP Development",
       description: "Transform your vision into a working product with our rapid MVP development process."
     },
     {
       icon: Code,
+      iconClass: "icon-code",
       title: "Technical Architecture",
       description: "Build scalable, robust technical foundations that grow with your business."
     },
     {
       icon: Users,
+      iconClass: "icon-users",
       title: "Team Building",
       description: "Assemble and manage high-performing technical teams tailored to your needs."
     },
     {
       icon: Zap,
+      iconClass: "icon-zap",
       title: "Product Strategy",
       description: "Develop comprehensive roadmaps that align technology with business objectives."
     }
@@ -54,7 +58,7 @@ const Services = () => {
               key={index} 
               className="p-8 bg-card/80 backdrop-blur-sm border-border hover:border-primary transition-all hover:scale-105 hover:-translate-y-2 hover:shadow-xl duration-300"
             >
-              <service.icon className="w-12 h-12 mb-4 text-primary" />
+              <service.icon className={`w-12 h-12 mb-4 text-primary ${service.iconClass}`} />
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
               <p className="text-muted-foreground">{service.description}</p>
             </Card>

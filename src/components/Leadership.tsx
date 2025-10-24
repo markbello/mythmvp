@@ -78,7 +78,7 @@ const Leadership = () => {
                 className="text-primary hover:text-primary/80 transition-colors"
                 aria-label={`${founder.name}'s LinkedIn profile`}
               >
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-6 h-6 icon-linkedin" />
               </a>
             </div>
             <div>
@@ -101,7 +101,7 @@ const Leadership = () => {
                         rel="noopener noreferrer"
                         className="text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-2 text-sm"
                       >
-                        <ExternalLink className="w-4 h-4" />
+                        <ExternalLink className="w-4 h-4 icon-link" />
                         {link.title}
                       </a>
                     </li>
@@ -137,7 +137,7 @@ const Leadership = () => {
                   className="text-primary hover:text-primary/80 transition-colors"
                   aria-label={`${member.name}'s LinkedIn profile`}
                 >
-                  <Linkedin className="w-6 h-6" />
+                  <Linkedin className="w-6 h-6 icon-linkedin" />
                 </a>
               </div>
             </Card>

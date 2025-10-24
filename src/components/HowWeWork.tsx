@@ -8,24 +8,28 @@ const HowWeWork = () => {
     {
       number: "01",
       icon: Users,
+      iconClass: "icon-users",
       title: "On-Demand CTO + Growth Partner Services & Technical Team Recruitment",
       description: "Navigating the complexities of technology leadership and team building can be challenging for emerging startups. Myth MVP offers On-Demand CTO + Growth Partner services, providing strategic technical direction and overseeing development to ensure alignment with your business objectives. Additionally, we assist in evaluating and hiring a permanent CTO and initial tech team, ensuring a seamless transition and sustained growth."
     },
     {
       number: "02",
       icon: Search,
+      iconClass: "icon-search",
       title: "Discovery",
       description: "We start by understanding your idea, challenges, and strategic goals, developing them into concrete technical strategy and design documents that include both organizational and technical details."
     },
     {
       number: "03",
       icon: Zap,
+      iconClass: "icon-zap",
       title: "Rapid Prototyping",
       description: "Our experienced team builds agile proof-of-concepts and MVPs to validate your vision."
     },
     {
       number: "04",
       icon: TrendingUp,
+      iconClass: "icon-trending",
       title: "Iterate & Scale",
       description: "Based on real-world feedback, we refine your product and build scalable solutions that propel your business forward."
     }
@@ -52,7 +56,7 @@ const HowWeWork = () => {
               <div className="text-6xl font-bold text-primary/10 absolute top-4 right-4 group-hover:text-primary/20 transition-colors duration-300">
                 {step.number}
               </div>
-              <step.icon className="w-12 h-12 mb-4 text-primary relative z-10 group-hover:scale-110 transition-transform duration-300" />
+              <step.icon className={`w-12 h-12 mb-4 text-primary relative z-10 ${step.iconClass}`} />
               <h3 className="text-2xl font-bold mb-4 relative z-10">{step.title}</h3>
               <p className="text-muted-foreground relative z-10">{step.description}</p>
             </Card>

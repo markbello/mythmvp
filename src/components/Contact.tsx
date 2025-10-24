@@ -17,7 +17,7 @@ const Contact = () => {
               <h3 className="text-xl font-semibold">Email</h3>
               <p className="text-muted-foreground">Ignite your project!</p>
               <div className="flex items-center justify-center gap-3">
-                <Mail className="w-5 h-5 text-primary" />
+                <Mail className="w-5 h-5 text-primary icon-mail" />
                 <a 
                   href="mailto:launch@mythmvp.com" 
                   className="text-foreground hover:text-primary transition-colors font-medium"
@@ -31,7 +31,7 @@ const Contact = () => {
               <h3 className="text-xl font-semibold">Phone</h3>
               <p className="text-muted-foreground">Prefer a direct call?</p>
               <div className="flex items-center justify-center gap-3">
-                <Phone className="w-5 h-5 text-primary" />
+                <Phone className="w-5 h-5 text-primary icon-phone" />
                 <a 
                   href="tel:2013050515" 
                   className="text-foreground hover:text-primary transition-colors font-medium"
