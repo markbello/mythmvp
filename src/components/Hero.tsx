@@ -1,8 +1,18 @@
 import { Button } from "@/components/ui/button";
+import paperTexture from "@/assets/paper-texture.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20 bg-gradient-to-br from-background via-secondary/20 to-primary/5 pt-20">
+    <section 
+      id="home" 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20 pt-20"
+      style={{
+        backgroundImage: `url(${paperTexture})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       
       <div className="container mx-auto px-6 relative z-10 text-center animate-fade-in">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-in fade-in slide-in-from-bottom-4 duration-700">
