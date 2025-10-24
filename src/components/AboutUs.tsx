@@ -59,8 +59,8 @@ const AboutUs = () => {
               >
                 <div className="flex gap-4">
                   <CheckCircle2 
-                    className={`w-6 h-6 text-primary shrink-0 mt-1 transition-all duration-500 ${
-                      feature.isVisible ? 'animate-burst' : 'opacity-0 scale-0'
+                    className={`w-6 h-6 text-primary shrink-0 mt-1 ${
+                      feature.isVisible ? 'animate-burst-delayed' : 'opacity-0 scale-0'
                     }`}
                   />
                   <div>
