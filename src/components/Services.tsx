@@ -4,28 +4,41 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Services = () => {
   const { ref, isVisible } = useScrollAnimation();
+  const { ref: icon1Ref, isVisible: icon1Visible } = useScrollAnimation();
+  const { ref: icon2Ref, isVisible: icon2Visible } = useScrollAnimation();
+  const { ref: icon3Ref, isVisible: icon3Visible } = useScrollAnimation();
+  const { ref: icon4Ref, isVisible: icon4Visible } = useScrollAnimation();
+  
   const services = [
     {
       icon: Rocket,
       iconClass: "icon-rocket",
+      ref: icon1Ref,
+      isVisible: icon1Visible,
       title: "MVP Development",
       description: "Transform your vision into a working product with our rapid MVP development process."
     },
     {
       icon: Code,
       iconClass: "icon-code",
+      ref: icon2Ref,
+      isVisible: icon2Visible,
       title: "Technical Architecture",
       description: "Build scalable, robust technical foundations that grow with your business."
     },
     {
       icon: Users,
       iconClass: "icon-users",
+      ref: icon3Ref,
+      isVisible: icon3Visible,
       title: "Team Building",
       description: "Assemble and manage high-performing technical teams tailored to your needs."
     },
     {
       icon: Zap,
       iconClass: "icon-zap",
+      ref: icon4Ref,
+      isVisible: icon4Visible,
       title: "Product Strategy",
       description: "Develop comprehensive roadmaps that align technology with business objectives."
     }
@@ -55,10 +68,11 @@ const Services = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <Card 
-              key={index} 
+              key={index}
+              ref={service.ref}
               className="p-8 bg-card/80 backdrop-blur-sm border-border hover:border-primary transition-all hover:scale-105 hover:-translate-y-2 hover:shadow-xl duration-300"
             >
-              <service.icon className={`w-12 h-12 mb-4 text-primary ${service.iconClass}`} />
+              <service.icon className={`w-12 h-12 mb-4 text-primary ${service.isVisible ? service.iconClass : 'opacity-0'}`} />
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
               <p className="text-muted-foreground">{service.description}</p>
             </Card>

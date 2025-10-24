@@ -292,43 +292,43 @@ All colors MUST be HSL.
     transform: scale(0);
   }
 
-  .icon-rocket:hover {
+  .icon-rocket {
     animation: rocket-launch 0.6s ease-out;
   }
 
-  .icon-code:hover {
+  .icon-code {
     animation: code-type 0.5s ease-in-out;
   }
 
-  .icon-users:hover {
+  .icon-users {
     animation: users-gather 0.5s ease-out;
   }
 
-  .icon-zap:hover {
+  .icon-zap {
     animation: zap-flash 0.4s ease-in-out;
   }
 
-  .icon-search:hover {
+  .icon-search {
     animation: search-scan 0.6s ease-in-out;
   }
 
-  .icon-trending:hover {
+  .icon-trending {
     animation: trending-rise 0.6s ease-out;
   }
 
-  .icon-mail:hover {
+  .icon-mail {
     animation: mail-bounce 0.6s ease-in-out;
   }
 
-  .icon-phone:hover {
+  .icon-phone {
     animation: phone-ring 0.5s ease-in-out;
   }
 
-  .icon-linkedin:hover {
+  .icon-linkedin {
     animation: linkedin-pulse 0.5s ease-in-out;
   }
 
-  .icon-link:hover {
+  .icon-link {
     animation: link-shoot 0.4s ease-out;
   }
 }
