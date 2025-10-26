@@ -98,7 +98,7 @@ const Leadership = () => {
                 <h3 className="text-2xl font-bold mb-2 text-center">{member.name}</h3>
                 <p className="text-primary font-medium mb-4 text-center text-sm">{member.title}</p>
               </div>
-              <div className="text-muted-foreground mb-6 leading-relaxed text-left text-sm flex-grow space-y-3">
+              <div className="text-muted-foreground mb-6 leading-relaxed text-left text-sm space-y-3">
                 {Array.isArray(member.bio) ? (
                   member.bio.map((paragraph, pIndex) => (
                     <p key={pIndex}>{paragraph}</p>
