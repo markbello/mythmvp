@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 18%;
 
-    --primary: 210 100% 50%;
+    --primary: 195 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 14% 96%;
@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 220 14% 96%;
     --muted-foreground: 220 9% 46%;
 
-    --accent: 315 100% 50%;
+    --accent: 280 85% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -34,11 +34,11 @@ All colors MUST be HSL.
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 210 100% 50%;
+    --ring: 195 100% 50%;
 
     --radius: 0.5rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%), hsl(315 100% 50%));
+    --gradient-primary: linear-gradient(135deg, hsl(195 100% 50%), hsl(280 85% 60%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 14% 98%));
   }
 }
@@ -61,9 +61,9 @@ All colors MUST be HSL.
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(
       90deg,
-      hsl(210 100% 50%),
-      hsl(315 100% 50%),
-      hsl(210 100% 50%)
+      hsl(195 100% 50%),
+      hsl(280 85% 60%),
+      hsl(195 100% 50%)
     );
     background-size: 200% auto;
     animation: gradient-shift 6.4s linear infinite;
@@ -183,7 +183,7 @@ All colors MUST be HSL.
     }
     50% {
       transform: scale(1.2);
-      filter: brightness(1.5) drop-shadow(0 0 8px hsl(210 100% 50%));
+      filter: brightness(1.5) drop-shadow(0 0 8px hsl(195 100% 50%));
     }
     100% {
       transform: scale(1);
