@@ -326,4 +326,12 @@ All colors MUST be HSL.
   .icon-link {
     animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
+
+  .icon-layers {
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  .icon-shield {
+    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
 }
