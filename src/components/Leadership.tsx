@@ -87,7 +87,7 @@ const Leadership = () => {
           {teamMembers.map((member, index) => (
             <Card 
               key={index} 
-              className="p-8 bg-card border-border hover:shadow-lg transition-all flex flex-col"
+              className="p-8 bg-card border-border hover:shadow-lg transition-all flex flex-col self-start"
             >
               <div className="flex flex-col items-center">
                 <img 
@@ -157,7 +157,7 @@ const Leadership = () => {
                 </div>
               )}
               
-              <div className="flex justify-center mt-auto">
+              <div className="flex justify-center">
                 <a 
                   href={member.linkedin}
                   className="text-primary hover:text-primary/80 transition-colors"
