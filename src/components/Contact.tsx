@@ -25,7 +25,7 @@ const Contact = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-3">
+            <div className="space-y-3 text-center">
               <h3 className="text-xl font-semibold">Email</h3>
               <p className="text-muted-foreground">Ignite your project!</p>
               <div className="flex items-center justify-center gap-3">
@@ -39,7 +39,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="space-y-3">
+            <div className="space-y-3 text-center">
               <h3 className="text-xl font-semibold">Phone</h3>
               <p className="text-muted-foreground">Prefer a direct call?</p>
               <div className="flex items-center justify-center gap-3">
