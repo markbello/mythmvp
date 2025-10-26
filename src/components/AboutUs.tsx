@@ -32,15 +32,15 @@ const AboutUs = () => {
   return (
     <section id="about" className="py-24 scroll-mt-20 bg-secondary/20 border-y-2 border-border">
       <div ref={ref} className={`container mx-auto px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <div className="max-w-4xl mx-auto">
-          <div className="mb-12">
-            <div className="inline-block">
-              <span className="text-accent font-semibold">About Us</span>
-              <span className="text-muted-foreground ml-2">/ Our foundation</span>
-            </div>
-            <div className="h-px bg-border mt-4" />
+        <div className="mb-12">
+          <div className="inline-block">
+            <span className="text-accent font-semibold">About Us</span>
+            <span className="text-muted-foreground ml-2">/ Our foundation</span>
           </div>
-          
+          <div className="h-px bg-border mt-4" />
+        </div>
+        
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
             About <span className="gradient-text">Us</span>
           </h2>
