@@ -49,7 +49,13 @@ const Leadership = () => {
         "Smit's expertise and entrepreneurial drive have been central to our clients' success."
       ],
       image: smitImage,
-      linkedin: "https://www.builtinla.com/articles/digitizing-antiques-roadshow-how-one-stop-shop-changing-collectibles"
+      linkedin: "#",
+      links: [
+        {
+          title: "Digitizing Antiques Roadshow: How This One-Stop Shop is Changing Collectibles",
+          url: "https://www.builtinla.com/articles/digitizing-antiques-roadshow-how-one-stop-shop-changing-collectibles"
+        }
+      ]
     },
     {
       name: "Roswell Hobbs",
