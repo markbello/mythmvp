@@ -51,6 +51,14 @@ const HowWeWork = () => {
   return (
     <section id="how-we-work" className="py-24 scroll-mt-20 bg-secondary/30 border-y-2 border-border">
       <div ref={ref} className={`container mx-auto px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className="mb-12">
+          <div className="inline-block">
+            <span className="text-accent font-semibold">How We Work</span>
+            <span className="text-muted-foreground ml-2">/ Our process</span>
+          </div>
+          <div className="h-px bg-border mt-4" />
+        </div>
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             How We <span className="gradient-text">Work</span>

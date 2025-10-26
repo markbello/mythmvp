@@ -8,13 +8,23 @@ const Contact = () => {
   return (
     <section id="contact" className="py-24 scroll-mt-20">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to transform your idea into <span className="gradient-text">reality?</span>
-          </h2>
-          <p className="text-lg text-muted-foreground mb-12">
-            Reach out and let's build the future together!
-          </p>
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-12">
+            <div className="inline-block">
+              <span className="text-accent font-semibold">Contact</span>
+              <span className="text-muted-foreground ml-2">/ Let's connect</span>
+            </div>
+            <div className="h-px bg-border mt-4" />
+          </div>
+          
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Ready to transform your idea into <span className="gradient-text">reality?</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mb-12">
+              Reach out and let's build the future together!
+            </p>
+          </div>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-3" ref={mailRef}>

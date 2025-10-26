@@ -48,6 +48,14 @@ const Services = () => {
     <section id="services" className="py-24 bg-background relative scroll-mt-20 border-t-2 border-border">
       <div className="absolute inset-0 bg-gradient-to-t from-accent/5 via-primary/5 to-transparent" />
       <div ref={ref} className={`container mx-auto px-6 relative z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className="mb-12">
+          <div className="inline-block">
+            <span className="text-accent font-semibold">Services</span>
+            <span className="text-muted-foreground ml-2">/ What we offer</span>
+          </div>
+          <div className="h-px bg-border mt-4" />
+        </div>
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Our <span className="gradient-text">Services</span>
