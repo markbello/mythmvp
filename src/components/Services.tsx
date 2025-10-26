@@ -12,7 +12,7 @@ const Services = () => {
   const services = [
     {
       icon: Rocket,
-      iconClass: "icon-rocket",
+      iconClass: "icon-animate",
       ref: icon1Ref,
       isVisible: icon1Visible,
       title: "MVP Development",
@@ -20,7 +20,7 @@ const Services = () => {
     },
     {
       icon: Code,
-      iconClass: "icon-code",
+      iconClass: "icon-animate",
       ref: icon2Ref,
       isVisible: icon2Visible,
       title: "Technical Architecture",
@@ -28,7 +28,7 @@ const Services = () => {
     },
     {
       icon: Users,
-      iconClass: "icon-users",
+      iconClass: "icon-animate",
       ref: icon3Ref,
       isVisible: icon3Visible,
       title: "Team Building",
@@ -36,7 +36,7 @@ const Services = () => {
     },
     {
       icon: Zap,
-      iconClass: "icon-zap",
+      iconClass: "icon-animate",
       ref: icon4Ref,
       isVisible: icon4Visible,
       title: "Product Strategy",

@@ -287,51 +287,7 @@ All colors MUST be HSL.
     transform: scale(0);
   }
 
-  .icon-rocket {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-code {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-users {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-zap {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-search {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-trending {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-mail {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-phone {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-linkedin {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-link {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-layers {
-    animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .icon-shield {
+  .icon-animate {
     animation: burst 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
 }

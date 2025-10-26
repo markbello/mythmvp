@@ -32,7 +32,7 @@ const Introduction = () => {
         
         <div className="grid md:grid-cols-2 gap-6">
           <Card ref={icon1Ref} className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-            <Rocket className={`w-8 h-8 mb-4 text-primary ${icon1Visible ? 'icon-rocket' : 'opacity-0 scale-0'}`} />
+            <Rocket className={`w-8 h-8 mb-4 text-primary ${icon1Visible ? 'icon-animate' : 'opacity-0 scale-0'}`} />
             <h3 className="text-xl font-bold mb-4">Rapid Delivery</h3>
             <p className="text-muted-foreground">
               We launch faster. Architecture and org design in days, products in 3–6 months. On average, Myth projects save clients 9 months to launch and $175K in tech debt. A recent Myth MVP build following this framework enabled an acquisition worth $20M in 18 months.
@@ -40,7 +40,7 @@ const Introduction = () => {
           </Card>
           
           <Card ref={icon2Ref} className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-            <Users className={`w-8 h-8 mb-4 text-primary ${icon2Visible ? 'icon-users' : 'opacity-0 scale-0'}`} />
+            <Users className={`w-8 h-8 mb-4 text-primary ${icon2Visible ? 'icon-animate' : 'opacity-0 scale-0'}`} />
             <h3 className="text-xl font-bold mb-4">Team Development</h3>
             <p className="text-muted-foreground">
               We help you scale teams the right way - advising on org structure, guiding technical recruiting, and facilitating contract-to-hire on builds so you can evaluate engineers before making a long-term commitment.
@@ -48,7 +48,7 @@ const Introduction = () => {
           </Card>
           
           <Card ref={icon3Ref} className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-            <Layers className={`w-8 h-8 mb-4 text-primary ${icon3Visible ? 'icon-layers' : 'opacity-0 scale-0'}`} />
+            <Layers className={`w-8 h-8 mb-4 text-primary ${icon3Visible ? 'icon-animate' : 'opacity-0 scale-0'}`} />
             <h3 className="text-xl font-bold mb-4">Tailored Solutions</h3>
             <p className="text-muted-foreground">
               From enterprise-grade infrastructure to lean, cost-efficient builds, we design solutions aligned with your strategy and financial goals.
@@ -56,7 +56,7 @@ const Introduction = () => {
           </Card>
           
           <Card ref={icon4Ref} className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-            <Shield className={`w-8 h-8 mb-4 text-primary ${icon4Visible ? 'icon-shield' : 'opacity-0 scale-0'}`} />
+            <Shield className={`w-8 h-8 mb-4 text-primary ${icon4Visible ? 'icon-animate' : 'opacity-0 scale-0'}`} />
             <h3 className="text-xl font-bold mb-4">Engineering Without Pitfalls</h3>
             <p className="text-muted-foreground">
               Avoid costly technical mistakes or resolve existing tech debt. We've learned the hard way so that you don't have to.

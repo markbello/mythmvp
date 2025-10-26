@@ -13,7 +13,7 @@ const HowWeWork = () => {
     {
       number: "01",
       icon: Users,
-      iconClass: "icon-users",
+      iconClass: "icon-animate",
       ref: icon1Ref,
       isVisible: icon1Visible,
       title: "On-Demand CTO + Growth Partner Services & Technical Team Recruitment",
@@ -22,7 +22,7 @@ const HowWeWork = () => {
     {
       number: "02",
       icon: Search,
-      iconClass: "icon-search",
+      iconClass: "icon-animate",
       ref: icon2Ref,
       isVisible: icon2Visible,
       title: "Discovery",
@@ -31,7 +31,7 @@ const HowWeWork = () => {
     {
       number: "03",
       icon: Zap,
-      iconClass: "icon-zap",
+      iconClass: "icon-animate",
       ref: icon3Ref,
       isVisible: icon3Visible,
       title: "Rapid Prototyping",
@@ -40,7 +40,7 @@ const HowWeWork = () => {
     {
       number: "04",
       icon: TrendingUp,
-      iconClass: "icon-trending",
+      iconClass: "icon-animate",
       ref: icon4Ref,
       isVisible: icon4Visible,
       title: "Iterate & Scale",
