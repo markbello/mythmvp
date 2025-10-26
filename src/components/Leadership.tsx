@@ -10,7 +10,11 @@ const Leadership = () => {
     {
       name: "Dan Van Tran",
       title: "Rapid Innovation Catalyst & Disruption Strategist",
-      bio: "Dan (DVT) is a dynamic technology leader with nearly two decades of experience transforming complex challenges into rapid, scalable solutions. He excels at building agile MVPs and crafting disruptive product strategies that drive startup success and yield high-value exits. DVT also specializes in guiding startups through early-stage development, offering interim technical leadership and facilitating the recruitment of permanent technology executives and teams. With a rich background spanning multinational enterprises to three-person startups—including FactSet, Flatiron Health, his own cofounded venture Zenauction, and Collectors—DVT has a proven knack for turning bold ideas into market-ready innovations. His strategic leadership also extends to active roles in angel investing and community boards, underscoring his commitment to nurturing emerging talent and advancing technology.",
+      bio: [
+        "Dan (DVT) is a dynamic technology leader with nearly two decades of experience transforming complex challenges into rapid, scalable solutions. He excels at building agile MVPs and crafting disruptive product strategies that drive startup success and yield high-value exits.",
+        "DVT also specializes in guiding startups through early-stage development, offering interim technical leadership and facilitating the recruitment of permanent technology executives and teams.",
+        "With a rich background spanning multinational enterprises to three-person startups—including FactSet, Flatiron Health, his own cofounded venture Zenauction, and Collectors—DVT has a proven knack for turning bold ideas into market-ready innovations. His strategic leadership also extends to active roles in angel investing and community boards, underscoring his commitment to nurturing emerging talent and advancing technology."
+      ],
       image: danImage,
       linkedin: "https://www.linkedin.com/in/dantran/",
       links: [
@@ -39,14 +43,22 @@ const Leadership = () => {
     {
       name: "Smit Gujarathi",
       title: "Startup Architect & Tactical Engineering Builder",
-      bio: "With over 15 years at the forefront of technological innovation, Smit excels in turning groundbreaking ideas into scalable, market-ready products. His extensive background—from multinational enterprises to nimble startups—includes leading roles at Blackrock and Flatiron Health, as well as co-founding a startup that achieved a multi-million-dollar exit. Smit's expertise and entrepreneurial drive have been central to our clients' success.",
+      bio: [
+        "With over 15 years at the forefront of technological innovation, Smit excels in turning groundbreaking ideas into scalable, market-ready products.",
+        "His extensive background—from multinational enterprises to nimble startups—includes leading roles at Blackrock and Flatiron Health, as well as co-founding a startup that achieved a multi-million-dollar exit.",
+        "Smit's expertise and entrepreneurial drive have been central to our clients' success."
+      ],
       image: smitImage,
-      linkedin: "#"
+      linkedin: "https://www.builtinla.com/articles/digitizing-antiques-roadshow-how-one-stop-shop-changing-collectibles"
     },
     {
       name: "Roswell Hobbs",
       title: "Strategic Operations & Innovation Scaling Specialist",
-      bio: "Roswell brings over a decade of leadership and operational expertise to the team, she has lead high-growth initiatives in technology-driven companies. Known for orchestrating and executing complex, high-impact projects at organizations like Flatiron Health and Hailo, she has a unique ability to translate strategic visions into actionable, tech-enabled outcomes. At Collectors, she has helped to triple the valuation, quadruple headcount, and drive global scale while completing a full Operational and tech/UX overhaul. Roswell's hands-on approach and commitment to driving rapid innovation make her an essential partner in transforming ideas into market realities.",
+      bio: [
+        "Roswell brings over a decade of leadership and operational expertise to the team, she has lead high-growth initiatives in technology-driven companies.",
+        "Known for orchestrating and executing complex, high-impact projects at organizations like Flatiron Health and Hailo, she has a unique ability to translate strategic visions into actionable, tech-enabled outcomes.",
+        "At Collectors, she has helped to triple the valuation, quadruple headcount, and drive global scale while completing a full Operational and tech/UX overhaul. Roswell's hands-on approach and commitment to driving rapid innovation make her an essential partner in transforming ideas into market realities."
+      ],
       image: roswellImage,
       linkedin: "https://www.linkedin.com/in/roswell-hobbs-59409659/"
     }
@@ -80,9 +92,15 @@ const Leadership = () => {
                 <h3 className="text-2xl font-bold mb-2 text-center">{member.name}</h3>
                 <p className="text-primary font-medium mb-4 text-center text-sm">{member.title}</p>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed text-left text-sm flex-grow">
-                {member.bio}
-              </p>
+              <div className="text-muted-foreground mb-6 leading-relaxed text-left text-sm flex-grow space-y-3">
+                {Array.isArray(member.bio) ? (
+                  member.bio.map((paragraph, pIndex) => (
+                    <p key={pIndex}>{paragraph}</p>
+                  ))
+                ) : (
+                  <p>{member.bio}</p>
+                )}
+              </div>
               
               {/* Links section for DVT */}
               {member.links && member.links.length > 0 && (
