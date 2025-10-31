@@ -7,8 +7,8 @@ const LeadershipPage = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <WhyChooseUs />
       <Leadership />
+      <WhyChooseUs />
       <Footer />
     </div>
   );
