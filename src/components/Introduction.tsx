@@ -21,14 +21,10 @@ const Introduction = () => {
           <div className="h-px bg-border mt-4" />
         </div>
         
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 leading-tight">
           Rapid builds, tailored solutions, and{" "}
-          <span className="gradient-text">technology transformations</span> - trusted by founders and owners across industries.
+          <span className="gradient-text">technology transformations</span>.
         </h2>
-        
-        <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
-          We partner with leaders in e-commerce, D2C, B2B, education, healthcare, finance, and more to accelerate innovation.
-        </p>
         
         <div className="grid md:grid-cols-2 gap-6">
           <Card ref={icon1Ref} className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">

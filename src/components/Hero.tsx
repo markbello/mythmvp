@@ -19,11 +19,6 @@ const Hero = () => {
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed">
-          At Myth MVP, we turn <strong className="text-foreground">bold ideas</strong> into{" "}
-          <strong className="text-foreground">simple, scalable tech solutions</strong> - fast. 
-        </p>
-        
-        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-8 leading-relaxed">
           Whether launching something new or modernizing outdated technology, we deliver{" "}
           <strong className="text-foreground">Proof of Concepts</strong>,{" "}
           <strong className="text-foreground">Minimum Viable Products</strong>, and{" "}
