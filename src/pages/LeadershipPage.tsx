@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Leadership from "@/components/Leadership";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const LeadershipPage = () => {
@@ -9,6 +10,7 @@ const LeadershipPage = () => {
       <Navigation />
       <Leadership />
       <WhyChooseUs />
+      <Contact />
       <Footer />
     </div>
   );

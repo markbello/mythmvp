@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import CaseStudies from "@/components/CaseStudies";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const CaseStudiesPage = () => {
@@ -7,6 +8,7 @@ const CaseStudiesPage = () => {
     <div className="min-h-screen">
       <Navigation />
       <CaseStudies />
+      <Contact />
       <Footer />
     </div>
   );
