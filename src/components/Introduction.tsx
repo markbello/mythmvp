@@ -15,16 +15,29 @@ const Introduction = () => {
       <div ref={ref} className={`container mx-auto px-6 relative z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="mb-12">
           <div className="inline-block">
-            <span className="text-accent font-semibold">Introduction</span>
+            <span className="text-accent font-semibold">About Us</span>
             <span className="text-muted-foreground ml-2">/ The way we work</span>
           </div>
           <div className="h-px bg-border mt-4" />
         </div>
         
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
           Rapid builds, tailored solutions, and{" "}
           <span className="gradient-text">technology transformations</span>.
         </h2>
+        
+        <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
+          We transform your ideas into market-ready solutions, managing technical complexities as your interim technology partner so you can focus on your core business.
+        </p>
+        
+        <div className="text-center mb-12">
+          <a 
+            href="/leadership" 
+            className="text-primary hover:text-primary/80 font-medium transition-colors inline-block"
+          >
+            Meet Our Leadership Team →
+          </a>
+        </div>
         
         <div className="grid md:grid-cols-2 gap-6">
           <Card ref={icon1Ref} className="p-8 bg-card border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
