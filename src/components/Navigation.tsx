@@ -45,25 +45,25 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <DropdownMenu>
-              <DropdownMenuTrigger className="text-foreground hover:text-primary transition-colors flex items-center gap-1 data-[state=open]:bg-primary/10 data-[state=open]:px-3 data-[state=open]:py-2 data-[state=open]:rounded-md">
+              <DropdownMenuTrigger className="inline-flex items-center gap-1 px-3 py-2 rounded-md text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background data-[state=open]:bg-primary/10">
                 Home <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-48">
                 <DropdownMenuItem 
                   onClick={(e) => handleNavClick(e as any, 'about')}
-                  className="py-3 cursor-pointer focus:bg-primary focus:text-primary-foreground"
+                  className="py-3 cursor-pointer hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground"
                 >
                   About Us
                 </DropdownMenuItem>
                 <DropdownMenuItem 
                   onClick={(e) => handleNavClick(e as any, 'services')}
-                  className="py-3 cursor-pointer focus:bg-primary focus:text-primary-foreground"
+                  className="py-3 cursor-pointer hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground"
                 >
                   Services
                 </DropdownMenuItem>
                 <DropdownMenuItem 
                   onClick={(e) => handleNavClick(e as any, 'how-we-work')}
-                  className="py-3 cursor-pointer focus:bg-primary focus:text-primary-foreground"
+                  className="py-3 cursor-pointer hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground"
                 >
                   How We Work
                 </DropdownMenuItem>
