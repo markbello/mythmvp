@@ -49,7 +49,7 @@ const Leadership = () => {
         "Smit's expertise and entrepreneurial drive have been central to our clients' success."
       ],
       image: smitImage,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/smitgujarathi/",
       links: [
         {
           title: "Digitizing Antiques Roadshow: How This One-Stop Shop is Changing Collectibles",
