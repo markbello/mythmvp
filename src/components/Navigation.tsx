@@ -48,20 +48,23 @@ const Navigation = () => {
               <DropdownMenuTrigger className="text-foreground hover:text-primary transition-colors flex items-center gap-1">
                 Home <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem onClick={(e) => handleNavClick(e as any, 'home')}>
-                  Hero
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={(e) => handleNavClick(e as any, 'introduction')}>
-                  Introduction
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={(e) => handleNavClick(e as any, 'about')}>
+              <DropdownMenuContent className="w-48">
+                <DropdownMenuItem 
+                  onClick={(e) => handleNavClick(e as any, 'about')}
+                  className="py-3 hover:bg-primary hover:text-primary-foreground cursor-pointer"
+                >
                   About Us
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={(e) => handleNavClick(e as any, 'services')}>
+                <DropdownMenuItem 
+                  onClick={(e) => handleNavClick(e as any, 'services')}
+                  className="py-3 hover:bg-primary hover:text-primary-foreground cursor-pointer"
+                >
                   Services
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={(e) => handleNavClick(e as any, 'how-we-work')}>
+                <DropdownMenuItem 
+                  onClick={(e) => handleNavClick(e as any, 'how-we-work')}
+                  className="py-3 hover:bg-primary hover:text-primary-foreground cursor-pointer"
+                >
                   How We Work
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -94,20 +97,6 @@ const Navigation = () => {
                 <div className="flex flex-col space-y-3">
                   <span className="text-lg font-medium text-foreground">Home</span>
                   <div className="flex flex-col space-y-2 pl-4">
-                    <a 
-                      href="/#home" 
-                      onClick={(e) => handleNavClick(e, 'home')}
-                      className="text-foreground hover:text-primary transition-colors"
-                    >
-                      Hero
-                    </a>
-                    <a 
-                      href="/#introduction" 
-                      onClick={(e) => handleNavClick(e, 'introduction')}
-                      className="text-foreground hover:text-primary transition-colors"
-                    >
-                      Introduction
-                    </a>
                     <a 
                       href="/#about" 
                       onClick={(e) => handleNavClick(e, 'about')}
