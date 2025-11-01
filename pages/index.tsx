@@ -9,13 +9,20 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export const getStaticProps: GetStaticProps = async () => {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mythmvp.com';
   return {
-    props: {},
+    props: {
+      siteUrl,
+    },
     revalidate: 3600, // Revalidate every hour
   };
 };
 
-export default function Home() {
+interface HomeProps {
+  siteUrl: string;
+}
+
+export default function Home({ siteUrl }: HomeProps) {
   return (
     <>
       <Head>
@@ -29,6 +36,12 @@ export default function Home() {
         <meta property="og:title" content="MYTH MVP - We Build Momentum" />
         <meta property="og:description" content="We deliver Proof of Concepts, MVPs, and Complete Builds that drive growth and high-value exits." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content={`${siteUrl}/cropped-myth-mvp-logomark-270x270.png`} />
+        <meta property="og:image:width" content="270" />
+        <meta property="og:image:height" content="270" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content={`${siteUrl}/cropped-myth-mvp-logomark-270x270.png`} />
+        <link rel="apple-touch-icon" href="/cropped-myth-mvp-logomark-270x270.png" />
       </Head>
       <div className="min-h-screen">
         <Navigation />
