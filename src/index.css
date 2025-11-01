@@ -60,9 +60,9 @@ All colors MUST be HSL.
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(
       90deg,
-      hsl(210 100% 40%),
-      hsl(300 50% 40%),
-      hsl(210 100% 40%)
+      hsl(195 100% 50%),
+      hsl(280 85% 60%),
+      hsl(195 100% 50%)
     );
     background-size: 200% auto;
     animation: gradient-shift 6.4s linear infinite;
