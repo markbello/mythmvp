@@ -3,7 +3,7 @@ import heroBgAbstract from "@/assets/hero-bg-abstract.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20 pt-20 py-16 md:py-0">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20 pt-28 pb-24 md:py-0">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-40"
         style={{ backgroundImage: `url(${heroBgAbstract})` }}
