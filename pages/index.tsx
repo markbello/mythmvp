@@ -25,7 +25,7 @@ export default function Home() {
           content="Whether launching something new or modernizing outdated technology, we deliver Proof of Concepts, Minimum Viable Products, and Complete Builds that drive growth and high-value exits." 
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/cropped-myth-mvp-logomark-270x270.png" type="image/png" />
         <meta property="og:title" content="MYTH MVP - We Build Momentum" />
         <meta property="og:description" content="We deliver Proof of Concepts, MVPs, and Complete Builds that drive growth and high-value exits." />
         <meta property="og:type" content="website" />

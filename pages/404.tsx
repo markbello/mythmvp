@@ -8,7 +8,7 @@ export default function NotFound() {
         <title>404 - Page Not Found | MYTH MVP</title>
         <meta name="description" content="The page you are looking for could not be found." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/cropped-myth-mvp-logomark-270x270.png" type="image/png" />
       </Head>
       <div className="flex min-h-screen items-center justify-center bg-gray-100">
         <div className="text-center">

@@ -23,7 +23,7 @@ export default function LeadershipPage() {
           content="Meet the leadership team at MYTH MVP. Learn about our experienced founders and their expertise in building successful products and companies." 
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/cropped-myth-mvp-logomark-270x270.png" type="image/png" />
         <meta property="og:title" content="Leadership - MYTH MVP" />
         <meta property="og:description" content="Meet the leadership team at MYTH MVP." />
         <meta property="og:type" content="website" />

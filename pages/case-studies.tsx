@@ -22,7 +22,7 @@ export default function CaseStudiesPage() {
           content="Explore our portfolio of successful projects including Proof of Concepts, MVPs, and complete builds that have driven growth and high-value exits." 
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/cropped-myth-mvp-logomark-270x270.png" type="image/png" />
         <meta property="og:title" content="Case Studies - MYTH MVP" />
         <meta property="og:description" content="Explore our portfolio of successful projects and case studies." />
         <meta property="og:type" content="website" />
