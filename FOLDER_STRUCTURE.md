@@ -85,7 +85,7 @@ start-myth-spark/
 │   │   ├── smit-gujarathi.png
 │   │   ├── roswell-hobbs.png
 │   │   └── paper-texture.jpg
-│   ├── favicon.ico
+│   ├── cropped-myth-mvp-logomark-270x270.png
 │   ├── placeholder.svg
 │   └── robots.txt
 │
@@ -164,5 +164,5 @@ All pages in `/pages` include:
 ## Asset References
 
 - Images: Use Next.js `Image` component with `/assets/image.png`
-- Static files: Reference from `/public/` root (e.g., `/favicon.ico`)
+- Static files: Reference from `/public/` root (e.g., `/cropped-myth-mvp-logomark-270x270.png`)
 
