@@ -150,7 +150,7 @@ import Image from "next/image";
 ```tsx
 import Head from 'next/head';
 <Head>
-  <title>Page Title - MYTH MVP</title>
+  <title>Page Title - Myth MVP</title>
   <meta name="description" content="Page description" />
 </Head>
 ```

@@ -1,6 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Menu, ChevronDown } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
@@ -11,18 +16,25 @@ const Navigation = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string
+  ) => {
     e.preventDefault();
     setIsOpen(false);
-    
-    if (location.pathname === '/') {
+
+    if (location.pathname === "/") {
       // Already on homepage, just scroll
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      document
+        .getElementById(sectionId)
+        ?.scrollIntoView({ behavior: "smooth" });
     } else {
       // Navigate to homepage first, then scroll
-      navigate('/');
+      navigate("/");
       setTimeout(() => {
-        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+        document
+          .getElementById(sectionId)
+          ?.scrollIntoView({ behavior: "smooth" });
       }, 100);
     }
   };
@@ -37,11 +49,17 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <a href="/" onClick={(e) => { e.preventDefault(); navigate('/'); }}>
-              <img src={logo} alt="MYTH MVP" className="h-12" />
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                navigate("/");
+              }}
+            >
+              <img src={logo} alt="Myth MVP" className="h-12" />
             </a>
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <DropdownMenu>
@@ -49,39 +67,40 @@ const Navigation = () => {
                 Home <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-48">
-                <DropdownMenuItem 
-                  onClick={(e) => handleNavClick(e as any, 'about')}
+                <DropdownMenuItem
+                  onClick={(e) => handleNavClick(e as any, "about")}
                   className="py-3 cursor-pointer hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground"
                 >
                   About Us
                 </DropdownMenuItem>
-                <DropdownMenuItem 
-                  onClick={(e) => handleNavClick(e as any, 'services')}
+                <DropdownMenuItem
+                  onClick={(e) => handleNavClick(e as any, "services")}
                   className="py-3 cursor-pointer hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground"
                 >
                   Services
                 </DropdownMenuItem>
-                <DropdownMenuItem 
-                  onClick={(e) => handleNavClick(e as any, 'how-we-work')}
+                <DropdownMenuItem
+                  onClick={(e) => handleNavClick(e as any, "how-we-work")}
                   className="py-3 cursor-pointer hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground"
                 >
                   How We Work
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="/leadership" className="text-foreground hover:text-primary transition-colors">
+            <a
+              href="/leadership"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Leadership
             </a>
-            <a href="/case-studies" className="text-foreground hover:text-primary transition-colors">
+            <a
+              href="/case-studies"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Case Studies
             </a>
-            <a 
-              href="/#contact"
-              onClick={(e) => handleNavClick(e, 'contact')}
-            >
-              <Button>
-                Contact Us
-              </Button>
+            <a href="/#contact" onClick={(e) => handleNavClick(e, "contact")}>
+              <Button>Contact Us</Button>
             </a>
           </div>
 
@@ -95,52 +114,52 @@ const Navigation = () => {
             <SheetContent side="right" className="w-[300px]">
               <div className="flex flex-col space-y-6 mt-8">
                 <div className="flex flex-col space-y-3">
-                  <span className="text-lg font-medium text-foreground">Home</span>
+                  <span className="text-lg font-medium text-foreground">
+                    Home
+                  </span>
                   <div className="flex flex-col space-y-2 pl-4">
-                    <a 
-                      href="/#about" 
-                      onClick={(e) => handleNavClick(e, 'about')}
+                    <a
+                      href="/#about"
+                      onClick={(e) => handleNavClick(e, "about")}
                       className="text-foreground hover:text-primary transition-colors"
                     >
                       About Us
                     </a>
-                    <a 
-                      href="/#services" 
-                      onClick={(e) => handleNavClick(e, 'services')}
+                    <a
+                      href="/#services"
+                      onClick={(e) => handleNavClick(e, "services")}
                       className="text-foreground hover:text-primary transition-colors"
                     >
                       Services
                     </a>
-                    <a 
-                      href="/#how-we-work" 
-                      onClick={(e) => handleNavClick(e, 'how-we-work')}
+                    <a
+                      href="/#how-we-work"
+                      onClick={(e) => handleNavClick(e, "how-we-work")}
                       className="text-foreground hover:text-primary transition-colors"
                     >
                       How We Work
                     </a>
                   </div>
                 </div>
-                <a 
-                  href="/leadership" 
-                  onClick={() => handlePageNav('/leadership')}
+                <a
+                  href="/leadership"
+                  onClick={() => handlePageNav("/leadership")}
                   className="text-lg text-foreground hover:text-primary transition-colors"
                 >
                   Leadership
                 </a>
-                <a 
-                  href="/case-studies" 
-                  onClick={() => handlePageNav('/case-studies')}
+                <a
+                  href="/case-studies"
+                  onClick={() => handlePageNav("/case-studies")}
                   className="text-lg text-foreground hover:text-primary transition-colors"
                 >
                   Case Studies
                 </a>
-                <a 
+                <a
                   href="/#contact"
-                  onClick={(e) => handleNavClick(e, 'contact')}
+                  onClick={(e) => handleNavClick(e, "contact")}
                 >
-                  <Button className="w-full">
-                    Contact Us
-                  </Button>
+                  <Button className="w-full">Contact Us</Button>
                 </a>
               </div>
             </SheetContent>

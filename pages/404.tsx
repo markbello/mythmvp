@@ -19,7 +19,7 @@ export default function NotFound({ siteUrl }: NotFoundProps) {
   return (
     <>
       <Head>
-        <title>404 - Page Not Found | MYTH MVP</title>
+        <title>404 - Page Not Found | Myth MVP</title>
         <meta
           name="description"
           content="The page you are looking for could not be found."

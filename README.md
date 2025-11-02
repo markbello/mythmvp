@@ -1,10 +1,10 @@
-# MYTH MVP - Next.js Application
+# Myth MVP - Next.js Application
 
 This project has been converted from a Vite/React application to Next.js for enhanced SEO and performance with server-side rendering (SSR) and static site generation (SSG).
 
 ## Project Overview
 
-**MYTH MVP** is a modern web application showcasing Proof of Concepts, Minimum Viable Products, and Complete Builds that drive growth and high-value exits.
+**Myth MVP** is a modern web application showcasing Proof of Concepts, Minimum Viable Products, and Complete Builds that drive growth and high-value exits.
 
 ## Technologies
 
